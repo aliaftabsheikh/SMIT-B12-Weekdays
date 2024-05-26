@@ -1,1 +1,1 @@
-# SMIR-B12-Weekdays
+# SMIT-B12-Weekdays
