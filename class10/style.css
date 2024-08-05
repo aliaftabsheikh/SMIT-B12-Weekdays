@@ -1,0 +1,75 @@
+/* span:hover {
+  background-color: red;
+  cursor: pointer;
+}
+div{
+    text-align: center;
+     }
+button{
+    transition: 0.3s ease;
+    background-color: green;
+    border: none;
+    font-size: 40px;
+   border-radius: 10px;
+   
+}
+
+button:active{
+    background-color: aqua;
+    transform: scale(1.5);
+}
+
+input{
+    font-size: 40px;
+    border-radius: 5px;
+    border: 4px solid green;
+    transition: 0.3s ease;
+}
+
+input:focus{
+    outline: none;
+    border-color: aqua;
+ transform: translateX(-20px); 
+}  */
+
+/* Existence Selector
+
+p[class]{   
+    background-color: red;
+} */
+
+/* Equality Selector  */
+/* p[class="cat"]{   
+    background-color: red;
+} */
+ 
+/* Equality Selector  */
+/* p[class~="cat"]{   
+    background-color: red;
+} */
+
+
+/* Prefix Selector */
+
+/* p[class^="cat"]{
+    background-color: brown;
+    color: rgb(241, 150, 150);
+    border: 2px dotted rgb(15, 15, 15);
+} */
+
+/* SubString Selector */
+
+/* p[class*="cat"]{
+    background-color: brown;
+    color: rgb(241, 150, 150);
+    border: 2px dotted rgb(15, 15, 15);
+} */
+
+
+/* Suffix Selector */
+
+/* p[class$="d"]{
+    background-color: brown;
+    color: rgb(241, 150, 150);
+    border: 2px dotted rgb(15, 15, 15);
+} */

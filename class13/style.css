@@ -1,0 +1,44 @@
+/* 
+
+h1{
+    background-color: bisque;
+}
+
+li {
+    display: inline; 
+    margin-right: 10px;}
+
+    li.coming-soon {
+   visibility: visible;
+   padding: 10px;
+   background-color: red;
+}
+
+li.coming-soon:hover{
+    visibility: hidden;
+}
+
+.box{
+    width: 200px;
+    height: 200px;
+    background-color: lightblue;
+    margin: 50px 0px 0px 50px;
+    box-shadow: 15px 15px 95px 5px #232222;
+    border: 1px solid red;
+    border-radius: 10px 20px 0px 50px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}    */
+
+
+ul {
+    /* list-style-type: upper-roman; */
+    /* margin-left:30rem;
+    width: 20px;
+    height: 20px; */
+    /* transform: scale(.5); */
+    /* list-style-image: url('/class13/SMIT.jpg'); */
+    list-style-position: outside;
+}
+
+

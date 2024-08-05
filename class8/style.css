@@ -1,0 +1,108 @@
+/* Universal Selector */
+
+/* * {
+    background-color: red;
+} */
+
+
+/* Type Selector */
+
+/* .para1, .para2{
+background-color: red;
+} */
+
+
+/* class Selector */
+
+/* .para1{
+background-color: red;
+} */
+
+/* id Selector */
+
+/* #para1{
+background-color: red;
+} */
+
+
+/* Child Selector */
+
+
+li > a{
+    color: brown;
+}
+/* Universal Selector */
+
+/* * {
+    background-color: red;
+} */
+
+
+/* Type Selector */
+
+/* .para1, .para2{
+background-color: red;
+} */
+
+
+/* class Selector */
+
+/* .para1{
+background-color: red;
+} */
+
+/* id Selector */
+
+/* #para1{
+background-color: red;
+} */
+
+
+/* Child Selector */
+
+/* li > p {
+    color: rgba(77, 89, 1, 0.792);
+} */
+
+
+/* Descendant Selector */
+
+/* li a {
+    color: yellow;
+} */
+
+
+/* Adjacent Sibling Selector */
+
+/* h1+p+p+p {
+    background-color: aquamarine;
+} */
+
+/* General Sibling  */
+/* Selector */
+
+/* h1~p {
+    background-color: aquamarine;
+} */
+
+
+
+
+/* body {
+    font-family: Arial, Verdana, sans-serif;
+    font-size: 12px; 
+    font-size: 10px;
+} 
+
+ h1 {
+    font-size: 200%;  
+}
+
+    h2 {
+    font-size: 20em;
+}  */
+
+
+p{
+    font-weight: normal;
+}

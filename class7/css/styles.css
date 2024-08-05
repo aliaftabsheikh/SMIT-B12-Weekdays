@@ -1,0 +1,24 @@
+
+
+.paraStyle{
+    font-size: x-small;
+    background-color: yellow;
+    max-width: 500px;
+}
+
+.paragraph{
+    background-color: red;
+    color: green
+}
+
+/* h2{
+    background-color: red;
+    color: green;
+} */
+
+
+/* #para1{
+    font-size: large;
+    background-color: aquamarine;
+    text-align: center;
+} */

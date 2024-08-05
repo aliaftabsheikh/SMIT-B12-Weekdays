@@ -1,0 +1,83 @@
+body{
+    /* display: flex;
+    f */
+}
+
+
+:root{
+    --primary-bg :red;
+    --secondary-bg: rgb(186, 233, 45);
+    --p1: 15px;
+    --p2: 30px;
+    --p3: 45px;
+    --border_primary: black
+}
+
+.one {
+  --primary-bg: yellow;
+    background-color: var(--primary-bg, blue);
+    padding: var(--p1) var(--p2);
+    border: 2px solid var(--border_primary);
+    margin: 5px
+  }
+
+  .two {
+    /* --secondary-bg: green; */
+    color: black;
+    background-color: var(--primary-bg);
+    /* padding: var(--p1) var(--p2);
+    border: 2px solid var(--border_primary); */
+    margin: 5px
+  }
+  .three {
+    background-color: var(--secondary-bg);
+    padding: var(--p1) var(--p1);
+    border: 2px solid var(--border_primary);
+    margin: 5px
+  }
+
+  .subContainer{
+    display: flex;
+    gap: 10px;
+    margin: 5px
+
+  }
+  .four {
+    background-color: var(--secondary-bg);
+    flex-grow: 1;
+  }
+  .five {
+    background-color: var(--primary-bg);
+    flex-grow: 1;
+
+  }
+
+  .heading{
+    font-size: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: relative;
+    cursor: pointer;
+    width: max-content;
+  }
+
+
+  .heading::after{
+    content: '';
+    width: 0px ;
+    height: 5px;
+    background: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
+            linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
+            linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s ease;
+  }
+  /* .heading:hover{
+    width: max-content;
+  } */
+  .heading:hover::after{
+    width: 100%;
+  }
+
+  

@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#box {
+  width: 150px;
+  height: 150px;
+  background-color: rgb(10, 10, 10);
+  border: 5px solid yellow;
+  position: relative;
+
+  /* animation-name: box-animation;
+  animation-duration: 1s;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-out; 
+  animation-fill-mode: both; 
+  animation-play-state: paused ; */
+/* } */
+  /* @keyframes duration | easing-function | delay |
+iteration-count | direction | fill-mode | play-state | name */
+
+animation: 2s linear 1s infinite alternate running box-animation;
+}
+
+@keyframes box-animation {
+    /* from{
+        top: 0;
+        left: 0;
+    } 
+    to{
+        top:0;
+        left: 750px;
+        background-color: rgb(206, 36, 36);
+    } */
+
+    0%{
+        top:0px;
+        left: 0px;
+    }
+    10%{
+        top: 0;
+        left: 200px;
+    }
+    20%{
+        top: 100px;
+        left: 200px;
+    }
+    50%{
+        top: 100px;
+        left: 600px;
+    }
+
+    70%{
+        top:0;
+        left: 600px;
+    }
+    100%{
+        top:0;
+        left: 800px;
+    }
+}
+
+/* @media (width > 200px) and (width < 500px){
+    #box{
+        background-color: green;    
+    }
+} */

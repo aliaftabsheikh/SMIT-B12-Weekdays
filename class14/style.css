@@ -1,0 +1,71 @@
+/* .parent{
+    empty-cells: hide ;
+}
+td {
+    border: 1px solid #0088dd;
+    padding: 15px;
+}
+
+    table.one {
+        border-collapse: collapse;
+        border-spacing: 6px 10px;
+        empty-cells: hide;
+    } */
+
+/* button{
+    cursor: progress;
+} */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    display: flex;
+    border: 1px solid black;
+    height: 2000px;
+}
+.container1{
+    display: block;
+    border: 1px solid black;
+    height: 2000px;
+}
+
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+    margin: 10px;
+}
+
+.box1{
+    /* position: absolute; */
+    /* top: 10px; */
+    /* top: 20px; */
+    /* top: 30px; */
+    z-index: 10;
+}
+.box2_container{
+    /* border: 2px solid black; */
+    /* position: absolute; */
+}
+
+.box2{
+    background-color: blue ;
+    position: absolute;
+    z-index: 20px;
+    /* top: 20px */
+    /* top: 29px;
+    left: 29px; */
+    /* position: absolute;
+    top: 120px;
+    left: 40px; */
+}
+.box3{
+    background-color: green ;
+}
+.box4{
+    background-color: yellow ;
+    /* position: relative; */
+    /* top: 20px;    */
+}

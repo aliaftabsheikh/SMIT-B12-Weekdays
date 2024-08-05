@@ -1,0 +1,34 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+ 
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+
+#box {
+  width: 150px;
+  height: 150px;
+  background-color: rgb(10, 10, 10);
+  border: 5px solid yellow;
+  /* transition: width 3s, height 6s; */
+  /* transition-duration: 5s; */
+  /* transition-timing-function: ease; */
+  /* transition-delay: 1s; */
+  /* margin: 100px; */
+
+  /* property name | duration | easing function | delay */
+  transition: all 1s ease ;
+}
+
+#box:hover{
+    transform: skewY();
+}

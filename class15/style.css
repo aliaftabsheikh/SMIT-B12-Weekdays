@@ -1,0 +1,55 @@
+.container {
+  display: flex;
+  border: 1px solid black;
+  justify-content: center;
+  margin-bottom: 800px;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: aqua;
+  margin: 10px;
+  position: static;
+}
+
+.box1 {
+   
+  background-color: red;
+  z-index: 4;
+}
+
+.box2 {
+  background-color: blue;
+  z-index: 3;
+  position: absolute;
+
+  
+}
+.box3 {
+  background-color: green;
+  z-index: 8;
+}
+
+.box4 {
+  background-color: yellow;
+  z-index: 1;
+}
+
+img{
+    width: 200px;
+    height: 200px;
+    
+}
+
+#img1{
+    border: 1px solid black;
+    float: right;
+    margin-right: 10px;
+}
+#img2{
+    border: 1px solid black;
+    float: right;
+    margin-right: 10px;
+    clear: none;
+}

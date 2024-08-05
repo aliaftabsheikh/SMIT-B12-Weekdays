@@ -1,0 +1,28 @@
+h1{
+    text-transform: uppercase;
+    word-spacing: 0px;
+    /* background-color: brown; */
+    /* height: 500px; */
+  /* color: green; */
+}
+
+/* h1::first-letter{
+    color: yellow;
+}
+p::first-line{
+    color: red;
+} */
+
+
+a{
+    color: green;
+}
+
+a:visited {
+    color: yellow;
+ }
+/* a:hover {
+    color: red;
+ } */
+
+
