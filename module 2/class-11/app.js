@@ -38,6 +38,16 @@ var text = "MY name is Ali Aftab"
 // console.log(text.replace(/Cat/g, "Parrot"));
 
 
-var number = 80.4
+var number = 1.01
 
-console.log(Math.round(number));
+// console.log(Math.round(number));
+// console.log(Math.floor(number));
+// console.log(Math.ceil(number));
+
+// console.log(Math.random());
+
+
+
+console.log(Math.floor(Math.random() * 10 + 1));
+
+
