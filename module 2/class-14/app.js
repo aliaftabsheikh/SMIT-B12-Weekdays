@@ -62,14 +62,14 @@ const results = 10;
 
 function sum(num1, num2){
   const results = num1 + num2
+  return results
 }
 
 sum(2,2)
-    console.log(results)
 
-// function subtract(num1){
-//    return num1 - sum(5, 5)
-// }
+function subtract(num1){
+   return num1 - sum(5, 5)
+}
 
 // console.log(subtract(15))
 
