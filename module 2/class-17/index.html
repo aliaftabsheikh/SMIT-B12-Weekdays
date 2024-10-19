@@ -1,12 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>class-17</title>
     <script src="app.js"></script>
-</head>
-<body>
- 
-</body>
+  </head>
+  <style>
+    .image-container {
+      display: flex;
+      justify-content: center;
+    }
+    .btn-container {
+      display: flex;
+      justify-content: center;
+      margin-top: 10px;
+    }
+
+    .btn-container button {
+      font-size: 28px;
+      background-color: cyan;
+      outline: none;
+      margin: 5px;
+      padding: 5px;
+    }
+    .hidden {
+      visibility: hidden;
+    }
+    .show {
+      visibility: visible;
+    }
+  </style>
+  <body>
+    <!-- <input type="text" size="30" onfocus="this.style.backgroundColor = 'red';" onblur="this.style.backgroundColor = 'transparent';"> -->
+
+    <!-- <form onsubmit="checkAddress('email', 'password')">
+      Email:
+      <input type="text"  id="email"/>
+      <input type="text"  id="password"/>
+
+      <button type="submit">Submit</button>
+    </form> -->
+
+    <!-- 
+    <p id="para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus inventore dolore, minima iusto dolor laborum quasi dignissimos blanditiis impedit ullam distinctio omnis tenetur id quibusdam mollitia doloribus architecto animi! Dicta?</p> -->
+
+    <!-- <button onclick="expandText()">Expand Text</button> -->
+
+    <div class="image-container">
+      <img
+        src="https://stimg.cardekho.com/images/carexteriorimages/930x620/Ferrari/F8-Tributo/7945/1598599471404/front-left-side-47.jpg"
+        id="hide"
+      />
+    </div>
+
+    <div class="btn-container ">
+      <button onclick="makeInvisible()">Hide Image</button>
+      <button onclick="makeVisible()">Show Image</button>
+    </div>
+  </body>
 </html>
