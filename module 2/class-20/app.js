@@ -1,23 +1,19 @@
-// var para = document.getElementById('para-2')
+// Topic
 
-// var parentElem = para.parentNode;
+// style
+// style.cssTsxt
+// setAttribute
+// className
+// classList
 
-// parentElem.removeChild(para)
-
-
-// var todos = document.querySelector('#todo')
-
-// var paraElem = document.createElement('p');
-// paraElem.innerHTML = 'Todo-4';  
-// {/* <p>Todo-4</p> */}
-
-// todos.appendChild(paraElem)
 
 var idCount = 1
 
 function addTodo() {
     var todos = document.getElementById('todos')
     var inpVal = document.getElementById('inp')
+
+    todos.setAttribute('class', 'todosContainer')
 
     
     var element = document.createElement('div')
