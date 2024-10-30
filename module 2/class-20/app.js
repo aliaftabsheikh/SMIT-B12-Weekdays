@@ -13,7 +13,12 @@ function addTodo() {
     var todos = document.getElementById('todos')
     var inpVal = document.getElementById('inp')
 
-    todos.setAttribute('class', 'todosContainer')
+    // todos.setAttribute('class', 'todosContainer')
+
+    if(inpVal.value.trim() === ""){
+        alert("Please add Todo Task !")
+        return;
+    }
 
     
     var element = document.createElement('div')
@@ -27,6 +32,7 @@ function addTodo() {
     todos.appendChild(element)
 
     idCount = idCount + 1;
+    inpVal.value = "";
 }
 
 function deleteTodo(id){
@@ -39,6 +45,11 @@ function deleteTodo(id){
 function updateTodo(id){
     var inpVal = document.getElementById('inp')
     var todoItem = document.getElementById(id)
+
+    if(inpVal.value.trim() === ""){
+        alert("Updated Todo not be empty !")
+        return;
+    }
 
     todoItem.innerHTML = `
     <p>${inpVal.value}</p> <button onclick="deleteTodo(${id})">Delete</button> <button onclick="updateTodo(${id})">Update</button>
