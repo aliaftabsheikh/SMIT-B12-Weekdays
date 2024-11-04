@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Color Generator</title>
+
+<style>
+    .container{
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 30px;
+        font-size: 40px;
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: bold;
+    }
+
+
+
+button {
+  padding: 0.6em 2em;
+  border: none;
+  outline: none;
+  color: rgb(255, 255, 255);
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  font-size: 24px;
+}
+
+button:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing-button-85 20s linear infinite;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+@keyframes glowing-button-85 {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+button:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #222;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+   
+.box{
+    width: 150px;
+    height: 150px;
+    border: 2px solid white;
+    text-align: center;
+    align-content: center;
+    background-color: blue;
+    transition: 0.3s ease-in all;
+    cursor: pointer;
+    /* transform: rotate(90deg); */
+}
+    
+</style>
+</head>
+<body style="background-color: #efd2c3;">
+    <div class="container">
+        <!-- <div id="hex-code">#efd2c3</div>
+
+        <button onclick="generateBgColor()">Generate Random Color !</button> -->
+
+        <div  class="box" style="transform: rotate(95deg);">
+            Box-1
+        </div>
+
+
+        <button onclick="roundBox()">Round Box !</button> 
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
