@@ -3,16 +3,19 @@ var person = {
     age: 23,
     role: 'Teacher',
     isPermenant: true,
-    // greet: function(name){
-    //     return "Welcome " + this.role
-    // },
+    greet: function(name){
+        return "Welcome " + this.role
+    },
     // shifts: ["morning", "evening", "night"]
-    // shifts: {
-    //     morning: "morning",
-    //     evening : "evening",
-    //     night: "night"
-    // }
+    shifts: {
+        morning: "morning",
+        evening : "evening",
+        night: "night"
+    }
 }
+
+console.log(person);
+
 
 // function Person(name, age, role, isPermenant){
 //     this.name1 = name;
