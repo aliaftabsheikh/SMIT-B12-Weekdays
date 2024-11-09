@@ -1,5 +1,5 @@
 var person = {
-    name: 'Ali',
+    name: 'Huzaifa',
     age: 23,
     role: 'Teacher',
     isPermenant: true,
@@ -14,7 +14,24 @@ var person = {
     }
 }
 
-console.log(person);
+// console.log(Object.keys(person));
+// console.log(Object.values(person));
+// console.log(Object.entries(person));
+
+
+
+
+// for(key in person){
+//     if(person[key] === "Ali"){
+//         console.log("Ali FOUND !");
+//     }
+// }
+
+
+// person.age = 43;
+
+// console.log(person);
+
 
 
 // function Person(name, age, role, isPermenant){
@@ -31,28 +48,28 @@ console.log(person);
 // console.log(person1);
 // console.log(person3);
 
-var persons = [
-    {
-        name: 'Ali',
-        age: 23,
-        role: 'Teacher',
-        isPermenant: true,
-    }, 
-    {
-        name: 'Irfan',
-        age: 40,
-        role: 'Student',
-        isPermenant: false,
-    }, 
-    {
-        name: 'Jethanand',
-        age: 18,
-        role: 'Student',
-        isPermenant: true,
-    }, 
-]
+// var persons = [
+//     {
+//         name: 'Ali',
+//         age: 23,
+//         role: 'Teacher',
+//         isPermenant: true,
+//     }, 
+//     {
+//         name: 'Irfan',
+//         age: 40,
+//         role: 'Student',
+//         isPermenant: false,
+//     }, 
+//     {
+//         name: 'Jethanand',
+//         age: 18,
+//         role: 'Student',
+//         isPermenant: true,
+//     }, 
+// ]
 
-console.log(persons.name);
+// console.log(persons.name);
 
 
 
