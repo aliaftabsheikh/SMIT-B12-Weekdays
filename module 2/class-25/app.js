@@ -125,7 +125,7 @@ function render() {
         todoElem.appendChild(elem)
 
     }
-    idCount++;
+    idCount = idCount + 1;
 
 }
 
@@ -135,6 +135,8 @@ function deleteTodo(id) {
     // var parentElem = deletedItem.parentNode;
     // parentElem.removeChild(deletedItem)
 
+
+    
     render()
 }
 
