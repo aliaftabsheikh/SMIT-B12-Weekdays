@@ -16,7 +16,7 @@
 // console.log(num);
 
 // {
-//     var num = 22;
+//     let num = 22;
 //     console.log(num);
 // }
 
@@ -40,7 +40,7 @@ function abc(){
 
 // abc()
 
-const num = 123;
+// const num;
 
 // num = 24
 
