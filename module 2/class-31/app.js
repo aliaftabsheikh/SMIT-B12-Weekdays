@@ -1,6 +1,5 @@
 // function b(){
 //     console.log(10);
-
 // }
 
 // var a = 10
@@ -19,7 +18,6 @@ function a() {
         console.log(b);
         
     }
-
 }
 
 var b = 10;
