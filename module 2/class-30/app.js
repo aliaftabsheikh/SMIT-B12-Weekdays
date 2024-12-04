@@ -1,20 +1,19 @@
 
-// var x = 21;
-// a()
-// b()
-// console.log(x);
+var x = 21;
+a()
+b()
+console.log(x);
 
 
 
-// function a(){
-//     console.log(x);   
-//     var x = 123;
-// }
+function a(){
+    console.log(x);   
+    var x = 123;
+}
 
-// function b(){
-//     console.log(x);   
-//     var x = 456;
-// }
+function b(){
+    console.log(x);   
+}
 
 
 

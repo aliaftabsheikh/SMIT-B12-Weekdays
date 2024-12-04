@@ -1,26 +1,44 @@
-// var b = 30;
-// let c = 30;
-// const d = 40;
+var b = 30;
+let c = 30;
+const d = 40;
+
+
+{
+    var b = 20
+    let c = 40
+    const d = 50
+
+
+    console.log("b-0", b);
+    console.log("BLOCK-1", c);
+    console.log("BLOCK-2", d);
+
+    {
+        let c = 60
+        console.log("INNER-BLOCK-1", c);
+
+        let d = 60
+        console.log("INNER-BLOCK-2", d);
+
+    }
+
+
+}
+
+
+console.log(b);
+console.log(c);
+console.log(d);
 
 // {
-//     var b = 20
-//     let c = 40
-//     const d = 50
+//     let c = 60
+//     console.log("INNER-BLOCK-1",c);
 
-//     {
-//         let c = 60
-//         console.log("INNER-BLOCK-1",c);
-
-//         let d = 60
-//         console.log("INNER-BLOCK-2",d);
-                
-//     }
-
-//     console.log(b);
-//     console.log("BLOCK-1", c);
-//     console.log("BLOCK-2",d);
+//     let d = 60
+//     console.log("INNER-BLOCK-2",d);
 
 // }
+
 
 // var table = 2
 
