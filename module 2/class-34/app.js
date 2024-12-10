@@ -1,29 +1,15 @@
-function x(a, b) {
-    // var a = 7
-    // var b = 8
+// 
+
+function x() {
+    var a = 7
 
     return function y() {
-
-        console.log("Y FUN", a);
-        console.log("Y FUN", b);
-
-
-
-        return function z() {
-            console.log("Z FUN", a);
-            console.log("Z FUN", b);
-        }
-
+        console.log(a);
     }
-
- 
-  
 }
 
-var d = x(8, 7)
+var z = x()
 
-console.log("OUTER", d);
+console.log("Hello");
 
-var e = d()
-
-e()
+z()
