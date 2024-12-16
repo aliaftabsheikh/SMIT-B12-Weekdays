@@ -12,7 +12,6 @@
 
 // y(x)
 
-
 const radius = [8, 7, 5, 2]
 
 const area = (rad) => {
@@ -38,13 +37,13 @@ const calculate = function (radius, logic) {
     return output
 }
 
-// console.log(calculate(radius, area))
-// console.log(calculate(radius, circumference))
-// console.log(calculate(radius, diameter))
+console.log(calculate(radius, area))
+console.log(calculate(radius, circumference))
+console.log(calculate(radius, diameter))
 
-console.log(radius.map(area))
-console.log(radius.map(circumference))
-console.log(radius.map(diameter))
+// console.log(radius.map(area))
+// console.log(radius.map(circumference))
+// console.log(radius.map(diameter))
 
 // ===============================================================
 
