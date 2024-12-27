@@ -30,7 +30,7 @@ const cart = ["shoes", "shirts", "pants"];
 // const user = fetch('https://api.github.com/users/aliaftabsheikh')
 
 
-// user.then(function(data){
+// user.then(function (data) {
 //     console.log(data)
 // })
 
@@ -53,10 +53,10 @@ const cart = ["shoes", "shirts", "pants"];
 //     console.log(err)
 // })
 
-order.then((orderId) => api.Payment(orderId))
-.then((paymentId) => api.Shipping(paymentId))
-.then((trackingId) => api.checkDelivery(trackingId))
-.then((deliveryStatus) => api.updateWallet(deliveryStatus))
-.then((walletStatus) => api.walletStatus(walletStatus))
-.then((status) => console.log(status))
-.catch((err) => console.log(err))
+// order.then((orderId) => api.Payment(orderId))
+// .then((paymentId) => api.Shipping(paymentId))
+// .then((trackingId) => api.checkDelivery(trackingId))
+// .then((deliveryStatus) => api.updateWallet(deliveryStatus))
+// .then((walletStatus) => api.walletStatus(walletStatus))
+// .then((status) => console.log(status))
+// .catch((err) => console.log(err))
