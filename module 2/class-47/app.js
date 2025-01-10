@@ -63,6 +63,12 @@ class Person {
 }
 
 
+const p = new Person("Ahmed", 19, "Pakistan", "Male")
+// const p1 = new Person("Ahmed1", 19, "Pakistan", "Male")
+// const p2 = new Person("Ahmed2", 19, "Pakistan", "Male")
+console.log(p)
+// console.log(p1)
+// console.log(p2)
 // INHERITANCE
 
 class WebEnrollment extends Person{
@@ -71,7 +77,6 @@ class WebEnrollment extends Person{
     constructor(name, age, country, gender, cnic){
         super(name, age, country, gender)
         this.cnic = cnic
-  
     }
 
     
@@ -79,7 +84,7 @@ class WebEnrollment extends Person{
 
 const web1 = new WebEnrollment("Ali", 23, "Pakistan", "Male", 12345678)
 web1.greet()
-console.log(web1)
+// console.log(web1)
 
 
 
