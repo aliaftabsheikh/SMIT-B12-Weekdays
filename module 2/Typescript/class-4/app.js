@@ -86,16 +86,51 @@
 // myval = null; // OK
 // myval = undefined; // OK
 // myval = () => { console.log('Hey again!'); }; // OK
-let fname = "Ali";
-fname = 23;
-fname = false;
-fname = "irfan !";
-if (typeof fname === "string") {
-    console.log(fname.toUpperCase());
-}
-if (typeof fname === "number") {
-    console.log(fname.toFixed());
-}
-if (typeof fname === "boolean") {
-    console.log(fname.valueOf());
-}
+// let fname:any = "Ali"
+// fname = 23;
+// fname = false
+// fname = "irfan !"
+// if(typeof fname === "string"){
+//     console.log(fname.toUpperCase())
+// }
+// if(typeof fname === "number"){
+//     console.log(fname.toFixed())
+// }
+// if(typeof fname === "boolean"){
+//     console.log(fname.valueOf())
+// }
+// function error(): any{
+//   console.log("Ali Aftab")
+// }
+// console.log(error())
+// let myname: unknown = "ali";
+// console.log((myname as string).toUpperCase());
+// myname = 10;
+// console.log((<number> myname).toFixed())
+// enum Color {
+//     Red = 1, 
+//     Green, 
+//     Blue = 2
+// };
+// console.log(Color.Blue)
+// enum Dishes {
+//     Biryani = "biryani",
+//     Haleem = "haleem",
+//     Nihari = "nihari"
+// }
+// console.log(Dishes['Haleem'] = "Qorma"
+// )
+var StausCode;
+(function (StausCode) {
+    StausCode["SUCCESS"] = "200";
+    StausCode["NOT_FOUND"] = "404";
+    StausCode["SERVER_ERROR"] = "500";
+})(StausCode || (StausCode = {}));
+// console.log(Browser[
+//     "FIREFOX"
+// ])
+// console.log(StausCode.SUCCESS)
+
+
+const fruit = ["APPLE", "MANGO", "BANANA"];
+let array2 = [1, 2, 3];

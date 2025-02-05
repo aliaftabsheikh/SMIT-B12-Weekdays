@@ -122,25 +122,91 @@
 
 
 
-let fname: unknown = "Ali"
 
-fname = 23;
+// let fname:any = "Ali"
 
-fname = false
+// fname = 23;
 
-fname = "irfan !"
+// fname = false
+
+// fname = "irfan !"
+
+ 
 
 
-if(typeof fname === "string"){
-    console.log(fname.toUpperCase())
+// if(typeof fname === "string"){
+//     console.log(fname.toUpperCase())
+// }
+
+// if(typeof fname === "number"){
+//     console.log(fname.toFixed())
+// }
+
+// if(typeof fname === "boolean"){
+//     console.log(fname.valueOf())
+// }
+
+
+// function error(): any{
+//   console.log("Ali Aftab")
+// }
+
+// console.log(error())
+
+// let myname: unknown = "ali";
+// console.log((myname as string).toUpperCase());
+
+
+// myname = 10;
+
+// console.log((<number> myname).toFixed())
+
+
+
+// enum Color {
+//     Red = 1, 
+//     Green, 
+//     Blue = 2
+// };
+
+// console.log(Color.Blue)
+
+
+
+// enum Dishes {
+//     Biryani = "biryani",
+//     Haleem = "haleem",
+//     Nihari = "nihari"
+// }
+
+// console.log(Dishes['Haleem'] = "Qorma"
+// )
+
+
+ enum StausCode  {
+    SUCCESS = "200",
+    NOT_FOUND = "404",
+    SERVER_ERROR = "500"
 }
 
-if(typeof fname === "number"){
-    console.log(fname.toFixed())
+// console.log(StausCode)
+
+const enum Browser {
+    CHROME,
+    FIREFOX,
+    SAFARI
 }
 
-if(typeof fname === "boolean"){
-    console.log(fname.valueOf())
-}
+// console.log(Browser[
+//     "FIREFOX"
+// ])
 
 
+// console.log(StausCode.SUCCESS)
+
+
+
+
+const fruit: string[] = ["APPLE", "MANGO", "BANANA"]
+
+let array2: Array<number> = [1, 2, 3]
