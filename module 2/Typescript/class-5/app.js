@@ -42,7 +42,3 @@ function callingFunction(text, callback) {
 }
 callingFunction("Hello", MyCallback);
 console.log(MyCallback);
-let a = 5;
-let b = 10;
-[a, b] = [b, a]; // Swap using destructuring
-console.log(a, b); // 10, 5

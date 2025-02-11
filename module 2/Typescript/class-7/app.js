@@ -1,9 +1,9 @@
 "use strict";
-const person = {
-    name: "Ali",
-    age: 23,
-    greet() {
-        console.log("Hello");
-    }
-};
-person.greet();
+// const person = {
+//     name: "Ali",
+//     age: 23,
+//     greet(){
+//         console.log("Hello");
+//     }
+// }
+// person.greet();

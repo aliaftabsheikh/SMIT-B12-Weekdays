@@ -130,7 +130,5 @@ var StausCode;
 //     "FIREFOX"
 // ])
 // console.log(StausCode.SUCCESS)
-
-
 const fruit = ["APPLE", "MANGO", "BANANA"];
 let array2 = [1, 2, 3];
