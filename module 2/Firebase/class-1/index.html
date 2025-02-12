@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Firebase Auth with TypeScript</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Firebase Auth Example</h1>
+    
+    <div id="user-info">
+      <p id="welcome-message"></p>
+      <button id="logout-btn">Logout</button>
+    </div>
+
+    <!-- Authentication Forms -->
+    <div id="auth-forms">
+      <div class="form-container" id="signup-container">
+        <h2>Sign Up</h2>
+        <form id="signup-form">
+          <input type="email" id="signup-email" placeholder="Email" required>
+          <input type="password" id="signup-password" placeholder="Password" required>
+          <button type="submit">Sign Up</button>
+        </form>
+      </div>
+
+      <div class="form-container" id="login-container">
+        <h2>Login</h2>
+        <form id="login-form">
+          <input type="email" id="login-email" placeholder="Email" required>
+          <input type="password" id="login-password" placeholder="Password" required>
+          <button type="submit">Login</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  
+  <script src="app.js" type="module"></script>
+</body>
+</html>
