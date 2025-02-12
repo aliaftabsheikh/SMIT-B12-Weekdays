@@ -15,13 +15,7 @@ import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, si
 
 
 const firebaseConfig = {
-    apiKey: "AIzaSyBjItH_SzseGqirXWEGa6d-9oy75ZhB0vw",
-    authDomain: "first-interaction-6230c.firebaseapp.com",
-    projectId: "first-interaction-6230c",
-    storageBucket: "first-interaction-6230c.firebasestorage.app",
-    messagingSenderId: "239439533636",
-    appId: "1:239439533636:web:df8ad47cad682496f9ce11",
-    measurementId: "G-DZ9D403DDB"
+    //
   };
 
 const app = initializeApp(firebaseConfig);
