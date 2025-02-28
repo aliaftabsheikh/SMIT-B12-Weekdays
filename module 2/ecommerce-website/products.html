@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Products</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Products</h1>
+      <div>
+        <button id="logout-btn">Logout</button>
+        <a href="favorites.html">Favorites</a>
+        <a href="cart.html">Cart</a>
+      </div>
+    </header>
+
+    <div id="add-product-form">
+      <h2>Add New Product</h2>
+      <form id="product-form">
+        <input
+          type="text"
+          id="product-name"
+          placeholder="Product Name"
+          required
+        />
+
+        <input
+          type="text"
+          id="product-price"
+          placeholder="Product Price"
+          required
+        />
+
+        <input
+          type="text"
+          id="product-image"
+          placeholder="Image URL"
+          required
+        />
+
+        <button type="submit">Add Product</button>
+      </form>
+    </div>
+
+    <!-- Products Container -->
+    <div id="products-container"></div>
+
+
+    
+    <script type="module" src="app.js"></script>
+  </body>
+</html>
