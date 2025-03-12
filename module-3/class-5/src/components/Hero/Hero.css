@@ -1,0 +1,52 @@
+.hero_container{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.content_container{
+    flex: 1;
+   display: flex;
+   flex-direction: column;
+   align-items: start;
+   justify-content: center;
+   gap: 40px;
+   padding:  20px 50px;
+}
+
+
+.content_container h1{
+  font-size: 40px;
+  font-weight: 900;
+}
+
+
+.content_container p{
+    font-size: 24px;
+    font-weight: lighter;
+    color: gray;
+  }
+
+  .content_container button{
+    padding: 10px 20px;
+    font-size: 24px;
+    border: 2px solid gray;
+    border-radius: 20px;
+  }
+
+
+
+
+
+
+
+
+.image_container{
+    flex: 1;
+}
+
+.image_container img{
+    width: 700px;
+    height: 700px;
+    object-fit: contain;
+}

@@ -1,0 +1,12 @@
+.product-card{
+    border: 2px solid black;
+    width: 320px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 20px;
+}
+
+

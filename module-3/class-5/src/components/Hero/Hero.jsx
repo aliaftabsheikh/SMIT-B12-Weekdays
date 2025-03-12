@@ -1,20 +1,18 @@
 import React from 'react'
 import "./Hero.css"
-const Hero = (props) => {
 
 
-
+const Hero = ({isDirectionLeft, heading, description, image, country}) => {
+  console.log("props", country )
   return (
-    <div className='hero_container' style={
-      {flexDirection: props.isDirectionLeft ? 'row-reverse' : 'row'}
-  }
+    <div className='hero_container' style={{flexDirection: isDirectionLeft ? 'row-reverse' : 'row'}}
     >
         <div className='content_container'>
           <h1>
-           {props.heading}
+           {heading}
           </h1>
 
-          <p>{props.description}</p>
+          <p>{description}</p>
           
 
           <button>Shop now !</button>
@@ -22,8 +20,9 @@ const Hero = (props) => {
 
 
         <div className='image_container'>
-            <img src={props.image}/>
+            <img src={image}/>
         </div>
+ 
     </div>
   )
 }
