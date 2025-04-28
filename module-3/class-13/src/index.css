@@ -1,0 +1,69 @@
+@import "tailwindcss";
+
+@theme {
+  /* --breakpoint-sm: 750px;
+  --breakpoint-md: 1000px;
+  --breakpoint-lg: 1200px;
+  --breakpoint-xl: 1400px;
+  --breakpoint-2xl: 1600px;
+  --breakpoint-3xl: 1800px;
+  --breakpoint-apna: 1900px; */
+
+  /* --breakpoint-*: initial; */
+}
+
+/* base
+components
+utilities */
+
+@layer base {
+  h1 {
+    @apply text-3xl font-bold;
+  }
+
+  p {
+    @apply text-xl font-normal;
+  }
+}
+
+/* @layer components{
+  .btn{
+    @apply text-lg font-bold border-2 border-solid border-gray-500 rounded-lg px-4 py-2 bg-gray-200 hover:bg-gray-300 transition duration-300 ease-in-out;
+
+  
+   &.primary{
+      @apply bg-blue-500 text-white border-blue-500 hover:bg-blue-600;
+    }
+
+   &.secondary{
+      @apply bg-red-500 text-white border-red-500 hover:bg-red-600;
+    }
+
+  }
+} */
+
+/* @layer utilities{
+
+  .bg-apna-red{
+    @apply bg-red-500
+  }
+
+  .custom-round {
+    @apply content-['Hello'] bg-blue-500 absolute top-0 right-0 w-12
+    h-12 rounded-full;
+  }
+} */
+
+
+/* Make a utilities  */
+
+@layer utilities {
+  /* .custom-before {
+    @apply relative;
+  } */
+
+  .custom-before::before {
+   
+    @apply content-[''] absolute top-0 right-0 w-12 h-12 bg-blue-500 rounded-full;
+  }
+}
