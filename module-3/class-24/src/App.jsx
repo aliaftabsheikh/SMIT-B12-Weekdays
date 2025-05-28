@@ -18,6 +18,7 @@ function App() {
   console.log("DATA ==>", data);
   
 
+)  
   return (
     <>
      <div>PRODUCTS </div>

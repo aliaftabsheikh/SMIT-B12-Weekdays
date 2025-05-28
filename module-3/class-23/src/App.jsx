@@ -12,7 +12,7 @@ function App() {
   })
 
   const {data, isLoading, error } = useGetPostsQuery()
-  const [createPost, {isLoading: createLoading, error: createError}] =useCreatePostMutation()
+  const [createPost, {isLoading: createLoading, error: createError, }] =useCreatePostMutation()
 
   const handleSubmit = async (e) => {
     await createPost(postData)
