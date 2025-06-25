@@ -8,7 +8,7 @@ export default async function Home() {
   // const data = await fetchData();
   // console.log('data', data);
 
-const data = await fetchData("http://localhost:3000/api/products");
+const data = await fetchData("http://localhost:3000/api/products" );
 
 
 if(!data){
