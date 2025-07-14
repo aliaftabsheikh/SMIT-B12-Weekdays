@@ -76,27 +76,28 @@
 const express = require('express')
 const app = express()
 const port = 3000
-// const cors = require('cors');
+const cors = require('cors');
 
 
 
-// const whitelist = ['http://localhost:5173'];
+const whitelist = ['http://localhost:5173', 'http://localhost:5174'];
 
 // Step 2: Set up cors options
-// const corsOptions = {
-//   origin: function (origin, callback) {
-//     // allow requests with no origin like mobile apps or curl
-//     if (!origin) return callback(null, true);
-//     if (whitelist.includes(origin)) {
-//       callback(null, true); // origin allowed
-//     } else {
-//       callback(new Error('Not allowed by CORS')); // origin not allowed
-//     }
-//   }
-// };
+const corsOptions = {
+  origin: function (origin, callback) {
+    // allow requests with no origin like mobile apps or curl
+    if (!origin) return callback(null, true);
+    if (whitelist.includes(origin)) {
+      callback(null, true); // origin allowed
+    } else {
+      callback(new Error('Not allowed by CORS')); // origin not allowed
+    }
+  }
+};
 
 // Step 3: Use cors middleware with options
-// app.use(cors(whitelist));
+app.use(cors(whitelist));
+
 app.get('/api/users', (req, res) => {
   res.send([
     {
@@ -107,6 +108,14 @@ app.get('/api/users', (req, res) => {
         id: 2,
         name: 'Hamza'
     },
+    {
+      id: 3,
+      name: 'Irfan'
+    },
+    {
+      id: 4,
+      name: 'Jethanand'
+    }
 
 
   ])
