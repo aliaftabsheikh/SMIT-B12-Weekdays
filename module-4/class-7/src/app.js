@@ -77,6 +77,7 @@ app.get('/getUserData', async(req, res)=>{
 
 
 
+
 connectToDB().then(()=>{
     console.log("Successfully connected to the Databse")
 }).catch(()=>{
