@@ -3,17 +3,24 @@ const { connectToDB } = require('../config/database');
 const { User } = require('./models/user');
 const validator = require('validator')
 const bcrypt = require('bcrypt');
+const jwt = require("jsonwebtoken");
+const cookieParser = require("cookie-parser");
+const { userAuth } = require('./middleware/Auth');
+
 
 
 
 const app = express()
+
 app.use(express.json())
+app.use(cookieParser());
 
 
 
-app.get('/getAllUsers', async (req, res) => {
+ 
+app.get('/getAllUsers', userAuth, async (req, res) => {
     try {
-        const user = await User.find({})
+        const user = req.user
         res.send(user)
 
     } catch (error) {
@@ -53,7 +60,11 @@ app.post('/signup', async (req, res) => {
         })
         user.save()
 
+    const token = await user.getJWT();
 
+    res.cookie("token", token, {
+      expires: new Date(Date.now() + 8 * 3600000),
+    });
         res.send("User Added Successfully !")
     } catch (error) {
         res.status(400).send("Error: " + error.message)
@@ -76,9 +87,10 @@ try {
 
 //    Return True/False
 
-   const isValidPassword = await bcrypt.compare(password, user.password)
+       const isPasswordValid = await user.validatePassword(password);
 
-   if(isValidPassword){
+
+   if(isPasswordValid){
     res.send("Login Successful")
    }else{
     throw new Error("Incorrect Credentials !")

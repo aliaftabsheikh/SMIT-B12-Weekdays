@@ -2,7 +2,7 @@ const express = require('express');
 const { connectToDB } = require('./config/database');
 const { User } = require('./models/user');
 const bcrypt = require('bcrypt');
-const validator = require('validator');
+    const validator = require('validator');
 const cookieParser = require('cookie-parser')
 const jwt = require("jsonwebtoken");
 const { userAuth } = require('./middleware/auth');
@@ -33,6 +33,7 @@ app.post('/signup', async (req, res) => {
 
 
         const passwordHashed = await bcrypt.hash(password, 10)
+                   // Salted Round !
         console.log(passwordHashed)
 
 
