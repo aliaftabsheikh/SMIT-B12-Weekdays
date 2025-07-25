@@ -1,9 +1,16 @@
 const express = require('express');
+const { userAuth } = require('../middleware/auth');
+const { User } = require('../models/user');
 const userRouter = express.Router()
 
 
-userRouter.get('/getUser', async(req, res)=>{
-    res.send("Get User Successful")
+userRouter.get('/getUser', userAuth, async(req, res)=>{
+   try {
+        const user = req.user;
+        res.status(200).send("User : " + user)
+    } catch (error) {
+        res.status(400).send("Error:" + error.message)
+    }
 })
 userRouter.get('/getAllUsers', async(req, res)=>{
     res.send("Get All Users Successful")

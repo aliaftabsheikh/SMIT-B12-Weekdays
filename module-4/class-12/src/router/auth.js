@@ -5,12 +5,36 @@ const bcrypt = require('bcrypt');
 const validator = require('validator');
 const jwt = require("jsonwebtoken");
 
-appRouter.post('/login', async(req, res)=>{
-    res.send("Login Successful")
+appRouter.post('/login', async (req, res) => {
+    try {
+        const { email, password } = req.body
+
+        const user = await User.findOne({ email })
+
+        if (!user) {
+            throw new Error('User not found signup first !')
+        }
+
+        const isPasswordValid = await bcrypt.compare(password, user.password)
+        
+        if (isPasswordValid) {
+            const token = await jwt.sign({ id: user._id }, process.env.SECRET_KEY, { expiresIn: '1d' },)
+
+            res.cookie("token", token, {
+                expires: new Date(Date.now() + 60 * 10000), // 10 minute
+            })
+            res.send(user)
+        } else {
+            throw new Error("Invalid Credentials !")
+        }
+
+    } catch (error) {
+        res.status(400).send("Error: " + error.message)
+    }
 })
 
-appRouter.post('/signup', async(req, res)=>{
-      try {
+appRouter.post('/signup', async (req, res) => {
+    try {
         const { firstName, lastName, email, password } = req.body;
 
 
@@ -29,22 +53,22 @@ appRouter.post('/signup', async(req, res)=>{
 
 
         const user = await User({
-                    firstName,
-                    lastName,
-                    email,
-                    password: passwordHashed
-                })
+            firstName,
+            lastName,
+            email,
+            password: passwordHashed
+        })
 
         user.save()
 
-        const token = await jwt.sign({id: user._id}, "Ali@321", {expiresIn: '1d'})
+        const token = await jwt.sign({ id: user._id }, process.env.SECRET_KEY, { expiresIn: '1d' })
 
-         res.cookie("token", token, {
-            expires:  new Date(Date.now() + 60 * 10000), // 10 minute
+        res.cookie("token", token, {
+            expires: new Date(Date.now() + 60 * 10000), // 10 minute
         })
 
         res.send('User Added Successfully ! ')
-       
+
 
 
     } catch (error) {
@@ -52,8 +76,12 @@ appRouter.post('/signup', async(req, res)=>{
     }
 })
 
-appRouter.post('/logout', async(req, res)=>{
-    res.send("Logout Successful")
+appRouter.post('/logout', async (req, res) => {
+    res.cookie("token", null, {
+        expires: new Date(Date.now() * 0),
+    })
+
+    res.send("Logout Successfully !")
 })
 
 

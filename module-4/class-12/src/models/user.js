@@ -72,7 +72,8 @@ const userSchema = new mongoose.Schema(
             type: [String]
         },
     }, {
-    timestamps: true
+    timestamps: true,
+    collection: 'student'
 }
 )
 
@@ -99,7 +100,7 @@ const userSchema = new mongoose.Schema(
 // };
 
 
-const User = mongoose.model('student', userSchema)
+const User = mongoose.model('User', userSchema)
 
 module.exports = {
     User
